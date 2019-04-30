@@ -1,0 +1,47 @@
+without delay 																	   82.40%
+
+Just Critic Val. Loss: 0.253031, Val. Acc: 90.45, Test. Loss: 0.427570, Test. Acc: 82.20%
+
+Just Actor 						 Val. Acc: 81.54,  						Test. Acc: 78.456
+
+Critic + Actor Train, 
+Save models based on just critic		   84.20								   79.692
+
+Critc was trained for 10 epochs
+actor was trained for 10 epochs
+
+proper way after 10 epochs				   88.94								   82.068
+
+proper way after 30 epochs 				   94.76								   83.568
+
+
+usually delay works better for smaller batch sizes: verified with TF code 
+Epoch: 30
+BS 5 - 80.8
+BS 50 - 76.2
+
+
+
+Tensorflow
+
+train 4000
+test 1000
+validation 500
+
+delay with BS 5	87.0 loss 0.10
+delay with BS 1	83.0 loss 0.10
+immediate update target with BS 5 which means BS 1 88.0
+
+
+
+Just critic train
+valid 	90.57333333333334
+train 	90.56571428571428
+
+Just actor train
+valid 	81.17
+train 	81.32
+
+critic and actor train
+valid 	94.73
+train 	94.90

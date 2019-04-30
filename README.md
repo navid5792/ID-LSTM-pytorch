@@ -1,4 +1,4 @@
-# Text-Classification-Pytorch
+# Text-Classification via RL Pytorch
 ## Description
 This repository contains the Pytorch implmentation of AAAI 2018 Paper "Learning Structured Representation for Text Classification via Reinforcement Learning".
 
